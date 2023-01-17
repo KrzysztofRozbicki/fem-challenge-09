@@ -2,19 +2,19 @@
 
 .box {
   padding: 3rem;
-  & *:nth-child(1) {
+  &__photo {
     margin-bottom: 2.1875rem;
   }
-  & *:nth-child(2) {
+  &__header {
     margin-bottom: 1.5625rem;
   }
-  & *:nth-child(3) {
+  &__text {
     margin-bottom: 1.5625rem;
   }
 }
 
 @media (min-width: $desktop-size) {
-  .box *:nth-child(3) {
+  .box__text {
     width: auto;
     margin-bottom: 5.1875rem;
   }
