@@ -1,0 +1,23 @@
+:root {
+  --fs-300: 0.5rem; //8px
+  --fs-500: 0.9375rem; //15px
+  --fs-700: 2.5rem; //40px
+
+  --ff-secondary: 'Big Shoulders Display', cursive;
+  --ff-primary: 'Lexend Deca', sans-serif;
+
+  --bg-primary-400: var(--text-primary-400);
+  --bg-primary-500: hsl(31, 77%, 52%);
+  --bg-primary-600: hsl(184, 100%, 22%);
+  --bg-primary-700: hsl(179, 100%, 13%);
+
+  --text-primary-100: #ffffff;
+  --text-primary-400: hsl(0, 0%, 95%);
+  --text-primary-500: hsla(0, 0%, 100%, 0.75);
+
+  --button-primary-100: var(--text-primary-100);
+  --button-primary-500: var(--text-primary-400);
+}
+
+$desktop-size: 64em;
+

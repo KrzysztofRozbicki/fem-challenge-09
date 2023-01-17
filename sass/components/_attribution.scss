@@ -1,0 +1,29 @@
+@use '../utils' as *;
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0.5rem;
+  text-align: center;
+
+  @include text(var(--fs-300), var(--text-primary-500), 400, 1.2);
+  &__link {
+    color: var(--text-primary-100);
+    font-weight: 700;
+    transition: 0.25s ease-in;
+    &:hover,
+    &:focus {
+      color: var(--bg-primary-500);
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .attribution {
+    color: darkgray;
+  }
+  .attribution__link {
+    color: gray;
+  }
+}

@@ -1,0 +1,26 @@
+@use '../utils' as *;
+
+.button {
+  @extend .text-500;
+  border: none;
+  background-color: var(--button-primary-500);
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  &--500 {
+    color: var(--bg-primary-500);
+  }
+  &--600 {
+    color: var(--bg-primary-600);
+  }
+  &--700 {
+    color: var(--bg-primary-700);
+  }
+  transition: 0.25s ease-in;
+  &:hover,
+  &:focus {
+    outline: 2px solid var(--button-primary-100);
+    background-color: transparent;
+    color: var(--button-primary-100);
+    cursor: pointer;
+  }
+}

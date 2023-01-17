@@ -1,1 +1,30 @@
 @use '../utils/vars' as *;
+
+@mixin text($size, $color, $weight, $line) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $line;
+}
+
+.text-500 {
+  @include text(var(--fs-500), var(--text-primary-500), 400, 1.5625rem);
+}
+
+.header-500 {
+  @include text(var(--fs-700), var(--text-primary-400), 700, 1.197);
+  text-transform: uppercase;
+  font-family: var(--ff-secondary);
+}
+
+.bg-500 {
+  background-color: var(--bg-primary-500);
+}
+
+.bg-600 {
+  background-color: var(--bg-primary-600);
+}
+
+.bg-700 {
+  background-color: var(--bg-primary-700);
+}
